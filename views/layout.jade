@@ -1,9 +1,13 @@
 doctype html
 html(lang='en')
-	head
-		meta(charset="utf-8")
-		title Untitled
+    head
+        meta(charset="utf-8")
+        title Untitled
+    
+    body
+        block content
 
-	body
-		block content
-		
+        div
+            form(method="POST" action="/formsubmit")
+                input(name="email" type="email")
+                input(type="submit")
